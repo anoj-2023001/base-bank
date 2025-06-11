@@ -24,9 +24,6 @@ export const initServer = async () => {
         configs(app);
         routes(app);
 
-        // Ejecutar antes de levantar el servidor
-        //await ensureDefaultCategory();
-
         app.listen(process.env.PORT);
         console.log(`Server running in port ${process.env.PORT}`);
 
@@ -36,5 +33,5 @@ export const initServer = async () => {
 };
 
 const routes = (app)=>{
-    //app.use('/api/auth', authRoutes);z
+    //app.use('/api/auth', authRoutes);
 }
